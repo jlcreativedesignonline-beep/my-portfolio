@@ -58,7 +58,7 @@ h1, h2, h3 {
     margin-bottom: 0.5em;
 }
 
-/* H2 Centering */
+/* H2 Centering (For section headings) */
 h2 {
     text-align: center;
     margin: 0 auto 40px auto; 
@@ -180,7 +180,7 @@ nav ul li a:hover {
 
 .hero-video-column video {
     width: 100%;
-    /* 💥 UPDATED: Reduced max-width from 450px to 350px */
+    /* Reduced max-width from 450px to 350px */
     max-width: 350px; 
     border-radius: 12px;
     box-shadow: 0 4px 15px var(--shadow-color);
@@ -192,13 +192,41 @@ nav ul li a:hover {
     color: var(--text-color);
 }
 
+/* --- LOGO STYLES --- */
+
+/* Container to center the logo */
+.brand-identity {
+    display: flex;
+    flex-direction: column; /* Set to column to center the logo alone */
+    align-items: center; /* Centers the logo horizontally */
+    gap: 15px; 
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+/* Styling for the Logo Image */
+.logo-image {
+    /* *** LOGO SIZE SET TO 700PX *** */
+    width: 700px; 
+    height: auto;
+    margin-bottom: 0; 
+}
+
+/* The .logo-caption rule has been REMOVED */
+/* --- END LOGO STYLES --- */
+
 .hero-text-column h2 {
     font-size: 3em;
     line-height: 1.1;
     text-align: left;
     border-bottom: none;
-    margin: 0 0 20px 0;
+    /* Adjusted margin to account for new logo placement */
+    margin: 5px 0 20px 0; 
     max-width: none;
+}
+
+.hero-text-column p {
+    margin-top: 0;
 }
 
 /* --- Project Grid --- */
@@ -447,6 +475,7 @@ nav ul li a:hover {
 }
 
 .scroll-photo {
+    flex: 0 0 100%; /* Take up the full width of the wrapper at each stop */
     width: 100%; 
     height: auto; 
     max-height: 500px; 
@@ -509,11 +538,20 @@ footer {
 
 @media (max-width: 900px) {
     .hero-content-grid {
+        /* Stack columns vertically */
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
     
+    /* On smaller screens, the logo must be prevented from getting too wide,
+       so we cap it at 100% of its container. */
+    .logo-image {
+        width: 100%;
+        max-width: 300px; /* A reasonable max size for mobile */
+    }
+
     .hero-text-column h2 {
+        /* Center text when on mobile */
         text-align: center;
         margin-top: 20px;
     }
@@ -523,7 +561,7 @@ footer {
         padding: 10px 20px;
     }
 
-    nav .logo { 
+    nav h1 { /* Targeting h1 directly since you don't use .logo class */
         margin-bottom: 10px;
     }
     
@@ -536,6 +574,12 @@ footer {
     
     nav ul li {
         margin: 5px 10px; 
+    }
+    
+    /* Ensure brand identity still centers the logo on mobile */
+    .brand-identity {
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
