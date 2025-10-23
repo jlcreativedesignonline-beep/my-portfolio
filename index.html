@@ -1,279 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light"> 
-    <title>JL Creative Design - Home Improvement Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light"> 
+    <title>JL Creative Design - Home Improvement Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
 <body>
 
-    <header>
-        <nav>
-            <h1>[JL Creative Design]</h1>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#testimonials">Feedback</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header>
+        <nav>
+            <h1>[JL Creative Design]</h1>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="hero" class="hero">
-        <div class="hero-content-grid container">
-            
-            <div class="hero-video-column">
-                <video id="architect-video" controls poster="images/video_poster.jpg" autoplay muted preload="auto"> 
-                    <source src="https://raw.githubusercontent.com/jlcreativedesignonline-beep/my-portfolio/main/video/architectsong.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">
-                    Wanna Hear Architect JL sing?
-                </p>
-            </div>
-            
-            <div class="hero-text-column">
-                <h2>We Will Make Your Ideas into Reality.</h2>
-                <p>Showcasing my projects and Architecture Reviewer.</p>
-            </div>
-            
-        </div>
-    </section>
-    
-    <section id="projects" class="container">
-        <h2>Building Designs</h2>
-        <div class="project-grid">
-            
-            <div class="project-card">
-                <img src="images/residential.jpg" alt="Proposed Two Storey Residential House" class="project-card-image">
-                <h3>Proposed Two Storey Residential House</h3>
-                <p>Owner: Nenita Apilado Gonzales</p>
-                <p>Location: Patucannay, Tayum Abra</p>
-                
-                <button class="button open-modal" data-modal-target="#projectModal">View Gallery</button> 
-            </div>
+    <section id="hero" class="hero">
+        <div class="hero-content-grid container">
+            
+            <div class="hero-video-column">
+                <a href="https://www.facebook.com/share/v/1aX1NtmbUD/" target="_blank" aria-label="Watch Architect JL's video on Facebook">
+                    <video id="architect-video" poster="images/video_poster.jpg" muted preload="auto" class="clickable-video"> 
+                        <source src="video/architectsong.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+                <p class="video-caption">
+                    Wanna Hear Architect JL sing? **Click the image above to watch on Facebook!**
+                </p>
+            </div>
+            
+            <div class="hero-text-column">
+                <h2>We Will Make Your Ideas into Reality.</h2>
+                <p>Showcasing my projects and Architecture Reviewer.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2>Building Designs</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <img src="images/residential.jpg" alt="Proposed Two Storey Residential House" class="project-card-image">
+                <h3>Proposed Two Storey Residential House</h3>
+                <p>Owner: Nenita Apilado Gonzales</p>
+                <p>Location: Patucannay, Tayum Abra</p>
+                
+                <div class="card-actions">
+                    <button class="button open-modal" data-modal-target="#projectModal">View Gallery</button> 
+                </div>
+            </div>
 
-            <div class="project-card">
-                <img src="images/apartment.jpg" alt="Proposed Two Story Apartment" class="project-card-image">
-                <h3>Proposed Two Story Apartment</h3>
-                <p> Available</p>
-                <p> 8 Bedrooms</p>
-                
-                <div class="card-actions">
-                    <button class="button open-modal" data-modal-target="#projectModal2">View Gallery</button> 
-                    <a 
-                        href="https://m.me/fraizy.7anz12?text=Hi%20JL%20Creative%20Design%2C%20I%20am%20interested%20in%20your%20Proposed%20Two%20Story%20Apartment%20project%20and%20would%20like%20to%20know%20more."
-                        target="_blank" 
-                        class="button inquire-button"> Inquire This
-                    </a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="images/resthouse.jpg" alt="Proposed Rest House Thumbnail" class="project-card-image">
-                <h3>Proposed Rest House</h3>
-                <p>Description: A relaxing, nature-focused design.</p>
-                <p>Location: [Project Location Here].</p>
-                
-                <div class="card-actions">
-                    <button class="button open-modal" data-modal-target="#projectModal3">View Gallery</button> 
-                    <a 
-                        href="https://m.me/fraizy.7anz12?text=Hi%20JL%20Creative%20Design%2C%20I%20am%20interested%20in%20your%20Proposed%20Rest%20House%20project%20and%20would%20like%20to%20know%20more."
-                        target="_blank" 
-                        class="button inquire-button"> Inquire This
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    
-    <section id="products" class="container">
-        <h2>Products</h2>
-        <p> ALE Reviewer and Coffee table. Shop with my link below!</p>
-        <div class="product-list">
-        
-            <div class="product-item">
-                <img src="images/reviewer.jpg" alt="Architecture Reviewer Flashcards and Books" class="product-item-image clickable-image" data-full-img="images/reviewer.jpg">
-                <h3>Architecture REVIEWER</h3>
-                <p>FlashCards and Books (a5 size).</p>
-                <a href="https://shopee.ph/architectureflashcards" class="button product-link" target="_blank">Shop Now &rarr;</a>
-            </div> 
-            
-            <div class="product-item">
-                <img src="images/coffeetable.jpg" alt="Epoxy Resin Coffee Table" class="product-item-image">
-                <h3>Coffee Table Epoxy Resin Table</h3>
-                <p>View the gallery of my custom epoxy resin coffee tables.</p>
-                <button class="button open-modal" data-modal-target="#coffeeTableModal">View Gallery</button> 
-            </div>
-            
-        </div>
-    </section>
+            <div class="project-card">
+                <img src="images/apartment.jpg" alt="Proposed Two Story Apartment" class="project-card-image">
+                <h3>Proposed Two Story Apartment</h3>
+                <p>Available</p>
+                <p>8 Bedrooms</p>
+                
+                <div class="card-actions">
+                    <button class="button open-modal" data-modal-target="#projectModal2">View Gallery</button> 
+                    <a 
+                        href="https://m.me/fraizy.7anz12?text=Hi%20JL%20Creative%20Design%2C%20I%20am%20interested%20in%20your%20Proposed%20Two%20Story%20Apartment%20project%20and%20would%20like%20to%20know%20more."
+                        target="_blank" 
+                        class="button inquire-button"> Inquire This
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="images/resthouse.jpg" alt="Proposed Rest House Thumbnail" class="project-card-image">
+                <h3>Proposed Rest House</h3>
+                <p>Description: A relaxing, nature-focused design.</p>
+                <p>Location: [Project Location Here].</p>
+                
+                <div class="card-actions">
+                    <button class="button open-modal" data-modal-target="#projectModal3">View Gallery</button> 
+                    <a 
+                        href="https://m.me/fraizy.7anz12?text=Hi%20JL%20Creative%20Design%2C%20I%20am%20interested%20in%20your%20Proposed%20Rest%20House%20project%20and%20would%20like%20to%20know%20more."
+                        target="_blank" 
+                        class="button inquire-button"> Inquire This
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="products" class="container">
+        <h2>Products</h2>
+        <p> ALE Reviewer and Coffee table. Shop with my link below!</p>
+        <div class="product-list">
+        
+            <div class="product-item">
+                <img src="images/reviewer.jpg" alt="Architecture Reviewer Flashcards and Books" class="product-item-image clickable-image" data-full-img="images/reviewer.jpg">
+                <h3>Architecture REVIEWER</h3>
+                <p>FlashCards and Books (a5 size).</p>
+                <a href="https://shopee.ph/architectureflashcards" class="button product-link" target="_blank">Shop Now &rarr;</a>
+            </div> 
+            
+            <div class="product-item">
+                <img src="images/coffeetable.jpg" alt="Epoxy Resin Coffee Table" class="product-item-image">
+                <h3>Coffee Table Epoxy Resin Table</h3>
+                <p>View the gallery of my custom epoxy resin coffee tables.</p>
+                <button class="button open-modal" data-modal-target="#coffeeTableModal">View Gallery</button> 
+            </div>
+            
+        </div>
+    </section>
 
-    <section id="testimonials" class="container">
-        <h2>Customer Feedback</h2>
-        <div class="testimonial-grid">
-        
-            <div class="testimonial-card">
-                <h3>Architecture Reviewer FeedBacks</h3>
-                <p>Click below to see the Feedbacks Of the customer who purchased the reviewers</p>
-                <button class="button open-modal" data-modal-target="#testimonial1">View Photo Feedback</button>
-            </div>
-            
-            <div class="testimonial-card">
-                <h3>Coffee Table Feedback</h3>
-                <p>Click below to see the Feedbacks Of the customer who purchased the Coffee Table</p>
-                <button class="button open-modal" data-modal-target="#testimonial2">View Photo Feedback</button>
-            </div>
-            
-        </div>
-    </section>
+    <section id="testimonials" class="container">
+        <h2>Customer Feedback</h2>
+        <div class="testimonial-grid">
+        
+            <div class="testimonial-card">
+                <h3>Architecture Reviewer FeedBacks</h3>
+                <p>Click below to see the Feedbacks Of the customer who purchased the reviewers</p>
+                <button class="button open-modal" data-modal-target="#testimonial1">View Photo Feedback</button>
+            </div>
+            
+            <div class="testimonial-card">
+                <h3>Coffee Table Feedback</h3>
+                <p>Click below to see the Feedbacks Of the customer who purchased the Coffee Table</p>
+                <button class="button open-modal" data-modal-target="#testimonial2">View Photo Feedback</button>
+            </div>
+            
+        </div>
+    </section>
 
-    <section id="contact" class="container">
-        <h2>Let's Talk About Your Project</h2>
-        <p>Ready to start Build your DreamHouse? Email me at **janicolanzb@gmail.com** or call **09108993341**.</p>
-    </section>
+    <section id="contact" class="container">
+        <h2>Let's Talk About Your Project</h2>
+        <p>Ready to start Build your DreamHouse? Email me at **janicolanzb@gmail.com** or call **09108993341**.</p>
+    </section>
 
-    <section id="cta" class="cta-section">
-        <div class="container">
-            <h2>Do You Have Questions? You can Contact Architect JL now!</h2>
-            <p>Send me a direct message for a fast response on scheduling and quotes!</p>
-            <a href="https://m.me/fraizy.7anz12" target="_blank" class="button cta-button">
-                Contact Now on Messenger
-            </a>
-        </div>
-    </section>
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2>Do You Have Questions? You can Contact Architect JL now!</h2>
+            <p>Send me a direct message for a fast response on scheduling and quotes!</p>
+            <a href="https://m.me/fraizy.7anz12" target="_blank" class="button cta-button">
+                Contact Now on Messenger
+            </a>
+        </div>
+    </section>
 
-    <div id="projectModal" class="modal" role="dialog" aria-labelledby="projectModalTitle1">
-        <span class="close-button" data-close-modal aria-label="Close project gallery">&times;</span>
-        <div class="modal-content">
-            <h2 id="projectModalTitle1">Project Gallery: Proposed Two Storey House</h2>
-            <div class="gallery-images">
-                <img src="images/residential1.jpg" alt="Residential house kitchen view 1" class="gallery-photo clickable-image" data-full-img="images/residential1.jpg">
-                <img src="images/kitchen_photo_2.jpg" alt="Residential house kitchen view 2" class="gallery-photo clickable-image" data-full-img="images/kitchen_photo_2.jpg">
-                <img src="images/kitchen_photo_3.jpg" alt="Residential house kitchen view 3" class="gallery-photo clickable-image" data-full-img="images/kitchen_photo_3.jpg">
-            </div>
-        </div>
-    </div>
-    
-    <div id="testimonial1" class="modal" role="dialog" aria-labelledby="testimonialModalTitle1">
-        <span class="close-button" data-close-modal aria-label="Close testimonial gallery">&times;</span>
-        <div class="modal-content">
-            <h2 id="testimonialModalTitle1">Some of Reviews/Feedbacks on Shopee</h2>
-            <p class="customer-quote">"Thank you for trusting JL Creative Design Reviewer"</p>
-            
-            <input type="range" min="0" max="9" value="0" class="carousel-slider" aria-label="Scroll through photo feedback">
-            
-            <div class="scrolling-wrapper">
-                <div class="image-track">
-                    <img src="images/feedback1.jpg" alt="Architecture Reviewer Feedback Photo 1" class="scroll-photo clickable-image" data-full-img="images/feedback1.jpg">
-                    <img src="images/feedback2.jpg" alt="Architecture Reviewer Feedback Photo 2" class="scroll-photo clickable-image" data-full-img="images/feedback2.jpg">
-                    <img src="images/feedback3.jpg" alt="Architecture Reviewer Feedback Photo 3" class="scroll-photo clickable-image" data-full-img="images/feedback3.jpg">
-                    <img src="images/feedback4.jpg" alt="Architecture Reviewer Feedback Photo 4" class="scroll-photo clickable-image" data-full-img="images/feedback4.jpg">
-                    <img src="images/feedback5.jpg" alt="Architecture Reviewer Feedback Photo 5" class="scroll-photo clickable-image" data-full-img="images/feedback5.jpg">
-                    <img src="images/feedback6.jpg" alt="Architecture Reviewer Feedback Photo 6" class="scroll-photo clickable-image" data-full-img="images/feedback6.jpg">
-                    <img src="images/feedback7.jpg" alt="Architecture Reviewer Feedback Photo 7" class="scroll-photo clickable-image" data-full-img="images/feedback7.jpg">
-                    <img src="images/feedback8.jpg" alt="Architecture Reviewer Feedback Photo 8" class="scroll-photo clickable-image" data-full-img="images/feedback8.jpg">
-                    <img src="images/feedback9.jpg" alt="Architecture Reviewer Feedback Photo 9" class="scroll-photo clickable-image" data-full-img="images/feedback9.jpg">
-                    <img src="images/feedback10.jpg" alt="Architecture Reviewer Feedback Photo 10" class="scroll-photo clickable-image" data-full-img="images/feedback10.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="projectModal" class="modal" role="dialog" aria-labelledby="projectModalTitle1">
+        <span class="close-button" data-close-modal aria-label="Close project gallery">&times;</span>
+        <div class="modal-content">
+            <h2 id="projectModalTitle1">Project Gallery: Proposed Two Storey House</h2>
+            <div class="gallery-images">
+                <img src="images/residential1.jpg" alt="Residential house kitchen view 1" class="gallery-photo clickable-image" data-full-img="images/residential1.jpg">
+                <img src="images/kitchen_photo_2.jpg" alt="Residential house kitchen view 2" class="gallery-photo clickable-image" data-full-img="images/kitchen_photo_2.jpg">
+                <img src="images/kitchen_photo_3.jpg" alt="Residential house kitchen view 3" class="gallery-photo clickable-image" data-full-img="images/kitchen_photo_3.jpg">
+            </div>
+        </div>
+    </div>
+    
+    <div id="testimonial1" class="modal" role="dialog" aria-labelledby="testimonialModalTitle1">
+        <span class="close-button" data-close-modal aria-label="Close testimonial gallery">&times;</span>
+        <div class="modal-content">
+            <h2 id="testimonialModalTitle1">Some of Reviews/Feedbacks on Shopee</h2>
+            <p class="customer-quote">"Thank you for trusting JL Creative Design Reviewer"</p>
+            
+            <input type="range" min="0" max="9" value="0" class="carousel-slider" aria-label="Scroll through photo feedback">
+            
+            <div class="scrolling-wrapper">
+                <div class="image-track">
+                    <img src="images/feedback1.jpg" alt="Architecture Reviewer Feedback Photo 1" class="scroll-photo clickable-image" data-full-img="images/feedback1.jpg">
+                    <img src="images/feedback2.jpg" alt="Architecture Reviewer Feedback Photo 2" class="scroll-photo clickable-image" data-full-img="images/feedback2.jpg">
+                    <img src="images/feedback3.jpg" alt="Architecture Reviewer Feedback Photo 3" class="scroll-photo clickable-image" data-full-img="images/feedback3.jpg">
+                    <img src="images/feedback4.jpg" alt="Architecture Reviewer Feedback Photo 4" class="scroll-photo clickable-image" data-full-img="images/feedback4.jpg">
+                    <img src="images/feedback5.jpg" alt="Architecture Reviewer Feedback Photo 5" class="scroll-photo clickable-image" data-full-img="images/feedback5.jpg">
+                    <img src="images/feedback6.jpg" alt="Architecture Reviewer Feedback Photo 6" class="scroll-photo clickable-image" data-full-img="images/feedback6.jpg">
+                    <img src="images/feedback7.jpg" alt="Architecture Reviewer Feedback Photo 7" class="scroll-photo clickable-image" data-full-img="images/feedback7.jpg">
+                    <img src="images/feedback8.jpg" alt="Architecture Reviewer Feedback Photo 8" class="scroll-photo clickable-image" data-full-img="images/feedback8.jpg">
+                    <img src="images/feedback9.jpg" alt="Architecture Reviewer Feedback Photo 9" class="scroll-photo clickable-image" data-full-img="images/feedback9.jpg">
+                    <img src="images/feedback10.jpg" alt="Architecture Reviewer Feedback Photo 10" class="scroll-photo clickable-image" data-full-img="images/feedback10.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div id="testimonial2" class="modal" role="dialog" aria-labelledby="testimonialModalTitle2">
-        <span class="close-button" data-close-modal aria-label="Close testimonial gallery">&times;</span>
-        <div class="modal-content">
-            <h2 id="testimonialModalTitle2">Coffee Table Feedback Gallery</h2>
-            <p class="customer-quote">"See the transformation photos that Tom B. said 'exceeded expectations.'"</p>
-            
-            <input type="range" min="0" max="2" value="0" class="carousel-slider" aria-label="Scroll through coffee table feedback photos"> 
-            
-            <div class="scrolling-wrapper">
-                <div class="image-track">
-                    <img src="images/test_tom_1.jpg" alt="Coffee Table Feedback View 1" class="scroll-photo clickable-image" data-full-img="images/test_tom_1.jpg">
-                    <img src="images/test_tom_2.jpg" alt="Coffee Table Feedback View 2" class="scroll-photo clickable-image" data-full-img="images/test_tom_2.jpg">
-                    <img src="images/test_tom_3.jpg" alt="Coffee Table Feedback View 3" class="scroll-photo clickable-image" data-full-img="images/test_tom_3.jpg">
-                    </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="projectModal2" class="modal" role="dialog" aria-labelledby="projectModalTitle2">
-        <span class="close-button" data-close-modal aria-label="Close apartment gallery">&times;</span>
-        <div class="modal-content">
-            <h2 id="projectModalTitle2">Project Gallery: Proposed Two Story Apartment</h2>
-            <p> Different Design Of Bedrooms</p>
-            <div class="gallery-images">
-                <img 
-                    src="images/apartment1.jpg" 
-                    alt="Apartment bedroom view 1" 
-                    class="gallery-photo clickable-image" 
-                    data-full-img="images/apartment1.jpg">
-                <img 
-                    src="images/apartment2.jpg" 
-                    alt="Apartment bedroom view 2" 
-                    class="gallery-photo clickable-image" 
-                    data-full-img="images/apartment2.jpg">
-                <img 
-                    src="images/apartment3.jpg" 
-                    alt="Apartment bedroom view 3" 
-                    class="gallery-photo clickable-image" 
-                    data-full-img="images/apartment3.jpg">
-            </div>
-        </div>
-    </div>
-    
-    <div id="coffeeTableModal" class="modal" role="dialog" aria-labelledby="coffeeTableModalTitle">
-        <span class="close-button" data-close-modal aria-label="Close coffee table gallery">&times;</span>
-        <div class="modal-content">
-            <h2 id="coffeeTableModalTitle">Product Gallery: Epoxy Resin Coffee Table</h2>
-            <div class="gallery-images">
-                <img 
-                    src="images/coffee_table_1.jpg" 
-                    alt="Epoxy Resin Coffee Table example 1" 
-                    class="gallery-photo clickable-image" 
-                    data-full-img="images/coffee_table_1.jpg">
-                <img 
-                    src="images/coffee_table_2.jpg" 
-                    alt="Epoxy Resin Coffee Table example 2" 
-                    class="gallery-photo clickable-image" 
-                    data-full-img="images/coffee_table_2.jpg">
-                <img 
-                    src="images/coffee_table_3.jpg" 
-                    alt="Epoxy Resin Coffee Table example 3" 
-                    class="gallery-photo clickable-image" 
-                    data-full-img="images/coffee_table_3.jpg">
-            </div>
-        </div>
-    </div>
+    <div id="testimonial2" class="modal" role="dialog" aria-labelledby="testimonialModalTitle2">
+        <span class="close-button" data-close-modal aria-label="Close testimonial gallery">&times;</span>
+        <div class="modal-content">
+            <h2 id="testimonialModalTitle2">Coffee Table Feedback Gallery</h2>
+            <p class="customer-quote">"See the transformation photos that Tom B. said 'exceeded expectations.'"</p>
+            
+            <input type="range" min="0" max="2" value="0" class="carousel-slider" aria-label="Scroll through coffee table feedback photos"> 
+            
+            <div class="scrolling-wrapper">
+                <div class="image-track">
+                    <img src="images/test_tom_1.jpg" alt="Coffee Table Feedback View 1" class="scroll-photo clickable-image" data-full-img="images/test_tom_1.jpg">
+                    <img src="images/test_tom_2.jpg" alt="Coffee Table Feedback View 2" class="scroll-photo clickable-image" data-full-img="images/test_tom_2.jpg">
+                    <img src="images/test_tom_3.jpg" alt="Coffee Table Feedback View 3" class="scroll-photo clickable-image" data-full-img="images/test_tom_3.jpg">
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="projectModal2" class="modal" role="dialog" aria-labelledby="projectModalTitle2">
+        <span class="close-button" data-close-modal aria-label="Close apartment gallery">&times;</span>
+        <div class="modal-content">
+            <h2 id="projectModalTitle2">Project Gallery: Proposed Two Story Apartment</h2>
+            <p> Different Design Of Bedrooms</p>
+            <div class="gallery-images">
+                <img 
+                    src="images/apartment1.jpg" 
+                    alt="Apartment bedroom view 1" 
+                    class="gallery-photo clickable-image" 
+                    data-full-img="images/apartment1.jpg">
+                <img 
+                    src="images/apartment2.jpg" 
+                    alt="Apartment bedroom view 2" 
+                    class="gallery-photo clickable-image" 
+                    data-full-img="images/apartment2.jpg">
+                <img 
+                    src="images/apartment3.jpg" 
+                    alt="Apartment bedroom view 3" 
+                    class="gallery-photo clickable-image" 
+                    data-full-img="images/apartment3.jpg">
+            </div>
+        </div>
+    </div>
+    
+    <div id="coffeeTableModal" class="modal" role="dialog" aria-labelledby="coffeeTableModalTitle">
+        <span class="close-button" data-close-modal aria-label="Close coffee table gallery">&times;</span>
+        <div class="modal-content">
+            <h2 id="coffeeTableModalTitle">Product Gallery: Epoxy Resin Coffee Table</h2>
+            <div class="gallery-images">
+                <img 
+                    src="images/coffee_table_1.jpg" 
+                    alt="Epoxy Resin Coffee Table example 1" 
+                    class="gallery-photo clickable-image" 
+                    data-full-img="images/coffee_table_1.jpg">
+                <img 
+                    src="images/coffee_table_2.jpg" 
+                    alt="Epoxy Resin Coffee Table example 2" 
+                    class="gallery-photo clickable-image" 
+                    data-full-img="images/coffee_table_2.jpg">
+                <img 
+                    src="images/coffee_table_3.jpg" 
+                    alt="Epoxy Resin Coffee Table example 3" 
+                    class="gallery-photo clickable-image" 
+                    data-full-img="images/coffee_table_3.jpg">
+            </div>
+        </div>
+    </div>
 
-    <div id="projectModal3" class="modal" role="dialog" aria-labelledby="projectModalTitle3">
-        <span class="close-button" data-close-modal aria-label="Close rest house gallery">&times;</span>
-        <div class="modal-content">
-            <h2 id="projectModalTitle3">Project Gallery: Proposed Rest House</h2>
-            <p>Add your rest house images here.</p>
-            <div class="gallery-images">
-            </div>
-        </div>
-    </div>
+    <div id="projectModal3" class="modal" role="dialog" aria-labelledby="projectModalTitle3">
+        <span class="close-button" data-close-modal aria-label="Close rest house gallery">&times;</span>
+        <div class="modal-content">
+            <h2 id="projectModalTitle3">Project Gallery: Proposed Rest House</h2>
+            <p>Add your rest house images here.</p>
+            <div class="gallery-images">
+            </div>
+        </div>
+    </div>
 
-    <div id="full-image-modal" class="modal" role="dialog" aria-labelledby="fullImageTitle">
-        <span class="close-button" data-close-modal aria-label="Close full-screen image">&times;</span>
-        <div class="modal-content" style="max-width: 90%; padding: 0;">
-            <h2 id="fullImageTitle" style="display: none;">Full Size Image View</h2>
-            <img id="full-modal-image" src="" alt="Full size image of project or feedback" style="width: 100%; height: auto; display: block; border-radius: 8px;">
-        </div>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 Architect Janico Lanz Arthur Bernal. All rights reserved.</p>
-    </footer>
-    
-    <script src="script.js"></script>
+    <div id="full-image-modal" class="modal" role="dialog" aria-labelledby="fullImageTitle">
+        <span class="close-button" data-close-modal aria-label="Close full-screen image">&times;</span>
+        <div class="modal-content" style="max-width: 90%; padding: 0;">
+            <h2 id="fullImageTitle" style="display: none;">Full Size Image View</h2>
+            <img id="full-modal-image" src="" alt="Full size image of project or feedback" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Architect Janico Lanz Arthur Bernal. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
 
 </body>
 </html>
