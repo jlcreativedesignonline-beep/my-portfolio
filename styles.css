@@ -4,6 +4,15 @@
 
 /* Custom properties for color themes (Dark Theme Defaults) */
 :root {
+    /* ------------------------------------------------------------- */
+    /* 🌟 FIX: Declare the color scheme as 'dark' or 'light dark'. 
+       'dark' tells the browser that this page handles dark mode, 
+       so DO NOT apply its own algorithmic darkening.
+       'light dark' means you support both and let the browser decide.
+       Since your defaults are dark, we use 'dark' to prevent inversion.
+    */
+    color-scheme: dark;
+    /* ------------------------------------------------------------- */
     --primary-color: #007bff; /* A nice blue for buttons/links */
     --secondary-color: #28a745; /* A complementary color */
 
@@ -18,6 +27,8 @@
 /* Light Theme (Overrides for users who prefer light mode) */
 @media (prefers-color-scheme: light) {
     :root {
+        /* This override is still necessary if you want to support users 
+           with light mode enabled on their system. */
         --background-color: #f8f9fa;
         --text-color: #212529;
         --card-background: #ffffff;
@@ -44,7 +55,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
-    cursor: auto; 
+    cursor: auto;
 }
 
 .container {
@@ -61,7 +72,7 @@ h1, h2, h3 {
 /* H2 Centering (For section headings) */
 h2 {
     text-align: center;
-    margin: 0 auto 40px auto; 
+    margin: 0 auto 40px auto;
     font-size: 2.2em;
     border-bottom: 2px solid var(--primary-color);
     max-width: 400px;
@@ -80,7 +91,7 @@ a:hover {
 
 /* Cursor Rule */
 a, .button, .clickable-image {
-    cursor: url('images/hammer.cur') 10 10, pointer; 
+    cursor: url('images/hammer.cur') 10 10, pointer;
 }
 
 /* --- Buttons --- */
@@ -106,7 +117,7 @@ a, .button, .clickable-image {
 }
 
 .inquire-button:hover {
-    background-color: #228b3f; 
+    background-color: #228b3f;
 }
 
 /* =================================== */
@@ -181,7 +192,7 @@ nav ul li a:hover {
 .hero-video-column video {
     width: 100%;
     /* Reduced max-width from 450px to 350px */
-    max-width: 350px; 
+    max-width: 350px;
     border-radius: 12px;
     box-shadow: 0 4px 15px var(--shadow-color);
 }
@@ -199,7 +210,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column; /* Set to column to center the logo alone */
     align-items: center; /* Centers the logo horizontally */
-    gap: 15px; 
+    gap: 15px;
     margin: 0 0 15px 0;
     padding: 0;
 }
@@ -207,9 +218,9 @@ nav ul li a:hover {
 /* Styling for the Logo Image */
 .logo-image {
     /* *** LOGO SIZE SET TO 700PX *** */
-    width: 700px; 
+    width: 700px;
     height: auto;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 /* The .logo-caption rule has been REMOVED */
@@ -221,7 +232,7 @@ nav ul li a:hover {
     text-align: left;
     border-bottom: none;
     /* Adjusted margin to account for new logo placement */
-    margin: 5px 0 20px 0; 
+    margin: 5px 0 20px 0;
     max-width: none;
 }
 
@@ -267,7 +278,7 @@ nav ul li a:hover {
 .project-card p {
     margin-bottom: 10px;
     font-size: 0.9em;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .card-actions {
@@ -286,12 +297,12 @@ nav ul li a:hover {
 
 .product-list {
     display: flex;
-    justify-content: center; 
-    gap: 40px; 
+    justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
     padding-top: 20px;
-    
-    max-width: 1100px; 
+
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -311,9 +322,9 @@ nav ul li a:hover {
 }
 
 .product-item-image {
-    height: 250px; 
+    height: 250px;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -346,7 +357,7 @@ nav ul li a:hover {
 }
 
 .testimonial-card p {
-    flex-grow: 1; 
+    flex-grow: 1;
     margin-bottom: 15px;
 }
 
@@ -397,21 +408,21 @@ nav ul li a:hover {
 
 /* --- Modal Styles --- */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 2000; 
+    display: none;
+    position: fixed;
+    z-index: 2000;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.8); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
     padding-top: 60px;
 }
 
 .modal-content {
     background-color: var(--card-background);
-    margin: 5% auto; 
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -476,19 +487,19 @@ nav ul li a:hover {
 
 .scroll-photo {
     flex: 0 0 100%; /* Take up the full width of the wrapper at each stop */
-    width: 100%; 
-    height: auto; 
-    max-height: 500px; 
-    object-fit: contain; 
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
     border-radius: 8px;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 /* The input range slider styling */
 .carousel-slider {
     width: 100%;
     margin: 20px 0;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     appearance: none;
     height: 8px;
     border-radius: 4px;
@@ -542,7 +553,7 @@ footer {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
-    
+
     /* On smaller screens, the logo must be prevented from getting too wide,
        so we cap it at 100% of its container. */
     .logo-image {
@@ -564,18 +575,18 @@ footer {
     nav h1 { /* Targeting h1 directly since you don't use .logo class */
         margin-bottom: 10px;
     }
-    
+
     nav ul {
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 10px;
     }
-    
+
     nav ul li {
-        margin: 5px 10px; 
+        margin: 5px 10px;
     }
-    
+
     /* Ensure brand identity still centers the logo on mobile */
     .brand-identity {
         flex-direction: column;
@@ -591,11 +602,11 @@ footer {
     h2 {
         font-size: 1.8em;
     }
-    
+
     .project-grid, .testimonial-grid {
         gap: 20px;
     }
-    
+
     .project-card, .product-item, .testimonial-card {
         padding: 15px;
     }
@@ -604,7 +615,7 @@ footer {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .button {
         width: 100%;
     }
